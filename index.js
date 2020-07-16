@@ -9,6 +9,7 @@ term.inputField(
 			.catch(e => console.log(e))
 
 		bot.on("ready", () => {
+			bot.user.setPresence({status: 'invisible'})
 			term(`\n^yIt's^ ${bot.user.username}\n^yIsBot?:^ ${bot.user.bot}\n^yguildlist:^\n`)
 			bot.guilds.cache.forEach(g => {
 				term(`${g.name} | ${g.id} -> [^r${g.channels.cache.size}^w] ${g.owner.user.username}\n`)
