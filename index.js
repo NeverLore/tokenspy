@@ -28,6 +28,9 @@ bot.on("message", msg => {
 	} else {
 		var atch = msg.attachments.first().url
 	}
-	term(`[ ^y${msg.guild.name}^ / ^y${msg.channel.name}^ ] ^o${msg.author.username}^ > ${msg.content}\n${atch}\n`)
-})});
+	term(`[ ^y${msg.guild.name}^ / ^y${msg.channel.name}^ ] ^c${msg.author.username}^ > ${msg.content}\n${atch}\n`)
+})
 
+bot.on("messageUpdate", (omsg, msg) => {
+	term(`[ ^y${msg.guild.name}^ / ^y${msg.channel.name}^ ] ^c${msg.author.username}^ updated:\nfrom > ${omsg.content}\nto > ${msg.content}\n\n`)
+})});
