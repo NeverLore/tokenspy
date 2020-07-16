@@ -1,11 +1,11 @@
-#Requirements:
+# Requirements:
 `NodeJS 12+`
-#To run: 
+# To run: 
 open `run.cmd`, copy to clipboard yours or stolen token and click `RMB` in terminal, then press `Enter`
 
-#Installing:
+# Installing:
 open terminal in your folder (press SHIFT + RMB).
- - Before installing, check **Requirements** ⬆️
+ - Before installing, check **Requirements** ↑
 Initialize the project:
 ```
 $ npm init
