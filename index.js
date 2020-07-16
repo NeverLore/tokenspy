@@ -14,8 +14,7 @@ term.inputField(
 			bot.guilds.cache.forEach(g => {
 				term(`${g.name} | ${g.id} -> [^r${g.channels.cache.size}^w] ${g.owner.user.username}\n`)
 				g.channels.cache.forEach(c => {
-					if (c.type != "text") return;
-					term(`\t[^r${c.position}^w] ${c.name} | ${c.id}\n`)
+					term(`\t[^r${c.position}^w] ${c.name} ( ^g${c.type}^ ) | ${c.id}\n`)
 				})				
 			})
 
